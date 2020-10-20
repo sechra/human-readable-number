@@ -25,15 +25,15 @@ module.exports = function toReadable (number) {
             return n[numberStr[0]] + " hundred"
         
         else if (numberStr[1] === "0")
-            return n[numberStr[0]] + " hundred" + n[numberStr[2]]
+            return n[numberStr[0]] + " hundred " + n[numberStr[2]]
         
         else if (numberStr[1] === "1" && numberStr[2] !== "0")
-            return n[numberStr[0]] + " hundred" + n11[numberStr[2]]
+            return n[numberStr[0]] + " hundred " + n11[numberStr[2]]
         
         else if (numberStr[2] === "0" && numberStr[1] !== "0")
-            return n[numberStr[0]] + " hundred" + n10[numberStr[1]]
+            return n[numberStr[0]] + " hundred " + n10[numberStr[1]]
         
         else
-            return n[numberStr[0]] + " hundred" + n10[numberStr[1]] + " " + n[numberStr[2]]
+            return n[numberStr[0]] + " hundred " + n10[numberStr[1]] + " " + n[numberStr[2]]
     }
 }
